@@ -1,0 +1,39 @@
+docker run -d -p 27017:27017 --name aspnetrun-mongo mongo
+
+Enter inside the Mongo DB: docker exec -it aspnetrun-mongo /bin/bash
+MONGO COMMANDS
+1) to start: mongo
+2) To show existing DB: show dbs 
+3) To create DB: use CatalogDb
+4) db.createCollection('Products')
+5) show collections
+
+To check records in collection: db.Products.find({}).pretty()
+To Delete all records : db.Products.remove({})
+
+
+DOCKER COMPOSE COMMAND
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+
+To Build: docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+
+REDIS
+
+docker run -d -p 6379:6379 --name aspnetrun-redis redis
+docker logs -f aspnetrun-redis
+
+Enter the container : docker exec -it aspnetrun-redis /bin/bash
+ 1. redis-cli
+2. ping
+3. set key value
+4. set name Ese
+5. get name
+
+
+
+RABBITMQ
+RUN : docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+
+
+FOR SQL SERVER
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=eseosa12345' -p 1433:1433 -d mcr.microsoft.com/mssql/server
