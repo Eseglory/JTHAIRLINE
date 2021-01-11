@@ -1,4 +1,5 @@
 using Hangfire;
+using HangFire.EventQueue.Core.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,8 @@ namespace HangFire.EventQueue.System
         {
             services.AddHangfire(x => x.UseSqlServerStorage(Configuration.GetConnectionString("HangFireConnection")));
             services.AddHangfireServer();
+
+            services.AddScoped<IHangFireService, HangFireService>();
 
             services.AddControllers();
         }

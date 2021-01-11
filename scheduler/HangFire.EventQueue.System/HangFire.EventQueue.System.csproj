@@ -8,5 +8,9 @@
     <PackageReference Include="Hangfire" Version="1.7.18" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HangFire.EventQueue.Core\HangFire.EventQueue.Core.csproj" />
+  </ItemGroup>
+
 
 </Project>

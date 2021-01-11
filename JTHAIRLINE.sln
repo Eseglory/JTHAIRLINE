@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scheduler", "scheduler", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangFire.EventQueue.System", "scheduler\HangFire.EventQueue.System\HangFire.EventQueue.System.csproj", "{9777C049-2C26-429A-92AA-2CB27DB0EE23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangFire.EventQueue.Core", "scheduler\HangFire.EventQueue.Core\HangFire.EventQueue.Core.csproj", "{255D95A4-8070-4F02-8442-33170D53383B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{9777C049-2C26-429A-92AA-2CB27DB0EE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9777C049-2C26-429A-92AA-2CB27DB0EE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9777C049-2C26-429A-92AA-2CB27DB0EE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255D95A4-8070-4F02-8442-33170D53383B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255D95A4-8070-4F02-8442-33170D53383B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255D95A4-8070-4F02-8442-33170D53383B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255D95A4-8070-4F02-8442-33170D53383B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{24069E8F-88D9-4852-ADAC-AE97F29D220F} = {1F32F974-1A66-4887-8DC2-A8BAB3AEE17D}
 		{C50AF8FE-27B0-4CC7-A0E5-62CAD1205567} = {24069E8F-88D9-4852-ADAC-AE97F29D220F}
 		{9777C049-2C26-429A-92AA-2CB27DB0EE23} = {28ED4B4C-F1F8-46D1-B58E-B44E28ADE3AF}
+		{255D95A4-8070-4F02-8442-33170D53383B} = {28ED4B4C-F1F8-46D1-B58E-B44E28ADE3AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {976E779A-BDC9-44B4-A778-269979171BDE}
